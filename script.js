@@ -4,6 +4,10 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
+// Seleciona a tela inicial e o botão
+const telaInicial = document.querySelector(".tela-inicial");
+const botaoIniciar = document.getElementById("botao-iniciar");
+
 const perguntas = [
   {
     enunciado: "Você costuma participar de ações sociais ou comunitárias?",
@@ -20,68 +24,8 @@ const perguntas = [
       }
     ]
   },
-  {
-    enunciado: "O que você considera mais importante em ações coletivas?",
-    alternativas: [
-      {
-        texto: "Ajudar quem mais precisa.",
-        afirmacao:
-          "Você valoriza o impacto direto que as ações coletivas têm na vida de pessoas em situação de vulnerabilidade."
-      },
-      {
-        texto: "Criar união entre os membros da comunidade.",
-        afirmacao:
-          "Você acredita que as ações coletivas têm o poder de unir as pessoas e criar redes de apoio."
-      }
-    ]
-  },
-  {
-    enunciado: "Como você costuma contribuir para o bem-estar social?",
-    alternativas: [
-      {
-        texto: "Com doações (alimentos, roupas, dinheiro).",
-        afirmacao:
-          "Sua forma de ajudar está ligada a gestos práticos e solidários que fazem diferença na vida de quem precisa."
-      },
-      {
-        texto: "Com o seu tempo e presença (voluntariado, visitas, apoio emocional).",
-        afirmacao:
-          "Você acredita que estar presente e oferecer apoio emocional é tão importante quanto doações materiais."
-      }
-    ]
-  },
-  {
-    enunciado: "Qual seu sentimento ao ver uma comunidade se mobilizando por uma causa?",
-    alternativas: [
-      {
-        texto: "Inspiração.",
-        afirmacao:
-          "Você se sente inspirado ao ver pessoas se unindo por algo maior, acreditando na força da coletividade."
-      },
-      {
-        texto: "Esperança.",
-        afirmacao:
-          "Você sente que, quando a comunidade se une, há esperança de um futuro mais justo e solidário."
-      }
-    ]
-  },
-  {
-    enunciado: "Você acredita que pequenas atitudes coletivas podem gerar grandes mudanças sociais?",
-    alternativas: [
-      {
-        texto: "Sim, com certeza.",
-        afirmacao:
-          "Você acredita que a transformação social começa com pequenas atitudes que, somadas, geram grandes impactos."
-      },
-      {
-        texto: "Depende do engajamento de todos.",
-        afirmacao:
-          "Você entende que as mudanças sociais só acontecem de verdade quando há participação ativa da maioria."
-      }
-    ]
-  }
+  // ... (as outras perguntas continuam iguais)
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -115,9 +59,13 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Seu perfil social:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
 
-mostraPergunta();
+// Esconde a tela inicial e começa o questionário
+botaoIniciar.addEventListener("click", () => {
+    telaInicial.style.display = "none";
+    mostraPergunta();
+});
