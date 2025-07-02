@@ -6,36 +6,81 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
   {
-    enunciado: "Você costuma considerar a origem dos produtos antes de comprá-los?",
+    enunciado: "Você costuma participar de ações sociais ou comunitárias?",
     alternativas: [
       {
-        texto: "Sim, prefiro comprar de marcas transparentes e éticas.",
+        texto: "Sim, sempre que posso.",
         afirmacao:
-          "Você valoriza a transparência e a ética por trás da produção dos produtos que consome."
+          "Você acredita que participar de ações sociais fortalece a comunidade e promove empatia entre as pessoas."
       },
       {
-        texto: "Não, priorizo apenas o preço e a praticidade.",
+        texto: "Não, raramente participo.",
         afirmacao:
-          "Você tende a priorizar o custo-benefício e a conveniência na hora de comprar."
+          "Você reconhece a importância das ações sociais, mas ainda busca maneiras de se envolver mais ativamente."
       }
     ]
   },
   {
-    enunciado: "Você faz separação de lixo em casa?",
+    enunciado: "O que você considera mais importante em ações coletivas?",
     alternativas: [
       {
-        texto: "Sim, separo orgânicos de recicláveis e resíduos especiais.",
+        texto: "Ajudar quem mais precisa.",
         afirmacao:
-          "Você contribui ativamente para a redução do impacto ambiental por meio da correta gestão do lixo."
+          "Você valoriza o impacto direto que as ações coletivas têm na vida de pessoas em situação de vulnerabilidade."
       },
       {
-        texto: "Não, não tenho esse hábito ou não tenho acesso à coleta seletiva.",
+        texto: "Criar união entre os membros da comunidade.",
         afirmacao:
-          "Você ainda não tem o hábito ou condições adequadas para separar o lixo de forma consciente."
+          "Você acredita que as ações coletivas têm o poder de unir as pessoas e criar redes de apoio."
       }
     ]
   },
   {
+    enunciado: "Como você costuma contribuir para o bem-estar social?",
+    alternativas: [
+      {
+        texto: "Com doações (alimentos, roupas, dinheiro).",
+        afirmacao:
+          "Sua forma de ajudar está ligada a gestos práticos e solidários que fazem diferença na vida de quem precisa."
+      },
+      {
+        texto: "Com o seu tempo e presença (voluntariado, visitas, apoio emocional).",
+        afirmacao:
+          "Você acredita que estar presente e oferecer apoio emocional é tão importante quanto doações materiais."
+      }
+    ]
+  },
+  {
+    enunciado: "Qual seu sentimento ao ver uma comunidade se mobilizando por uma causa?",
+    alternativas: [
+      {
+        texto: "Inspiração.",
+        afirmacao:
+          "Você se sente inspirado ao ver pessoas se unindo por algo maior, acreditando na força da coletividade."
+      },
+      {
+        texto: "Esperança.",
+        afirmacao:
+          "Você sente que, quando a comunidade se une, há esperança de um futuro mais justo e solidário."
+      }
+    ]
+  },
+  {
+    enunciado: "Você acredita que pequenas atitudes coletivas podem gerar grandes mudanças sociais?",
+    alternativas: [
+      {
+        texto: "Sim, com certeza.",
+        afirmacao:
+          "Você acredita que a transformação social começa com pequenas atitudes que, somadas, geram grandes impactos."
+      },
+      {
+        texto: "Depende do engajamento de todos.",
+        afirmacao:
+          "Você entende que as mudanças sociais só acontecem de verdade quando há participação ativa da maioria."
+      }
+    ]
+  }
+];
     enunciado: "Você compra roupas com frequência de marcas fast fashion?",
     alternativas: [
       {
