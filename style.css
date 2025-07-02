@@ -1,43 +1,59 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+:root {
+    --cor-fundo: #F5F9F1; /* Fundo claro e suave, como papel reciclado */
+    --cor-principal: #D4EDD4; /* Verde claro para áreas principais */
+    --cor-secundaria: #88C9A1; /* Verde água para botões e destaques */
+    --cor-destaque: #3B8F3B; /* Verde forte para textos em destaque */
+    --cor-texto: #2E3A2C; /* Verde escuro / quase preto, bom para leitura */
+    --fonte-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
+    font-family: var(--fonte-padrao);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin: 0;
+    padding: 20px;
 }
 
-.caixa-principal{
+.caixa-principal {
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-h1{
+h1 {
     color: var(--cor-destaque);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
     border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
 }
 
-button:hover{
+button:hover {
     background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+    color: white;
+    transform: scale(1.05);
 }
