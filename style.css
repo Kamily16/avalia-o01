@@ -1,9 +1,9 @@
 :root {
-    --cor-fundo: #F5F9F1; /* Fundo claro e suave, como papel reciclado */
-    --cor-principal: #D4EDD4; /* Verde claro para áreas principais */
-    --cor-secundaria: #88C9A1; /* Verde água para botões e destaques */
-    --cor-destaque: #3B8F3B; /* Verde forte para textos em destaque */
-    --cor-texto: #2E3A2C; /* Verde escuro / quase preto, bom para leitura */
+    --cor-fundo: #FEF9F3; 
+    --cor-principal: #FFF3E0; 
+    --cor-secundaria: #FFB74D; 
+    --cor-destaque: #D84315; 
+    --cor-texto: #3E2723; 
     --fonte-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -28,6 +28,20 @@ body {
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+}
+
+.tela-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.texto-introducao {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 500px;
 }
 
 h1 {
